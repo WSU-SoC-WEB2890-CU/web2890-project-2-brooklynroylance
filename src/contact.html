@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEB 2890 - Project 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Project 2 ...">
+
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="images/text_logo-03.png" alt="'H'Evans Honey Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact">
+        <article class="intro">
+            <h2>Contact Us</h2>
+            <p>
+                We’d love to here from you, <br>
+                Fill out the contact form or contact us via email <br><a href="#">hevanshoney@mail.com</a>
+            </p>
+        </article>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"> <br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"> <br>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone"> <br>
+
+            <label class="message" for="message">Message</label> <br>
+            <textarea id="message" name="message" style="width: 100%;">
+            Type your message here..
+            </textarea>
+
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </section>
+  </main>
+  <footer>
+    <article class="links">
+      <a href="#"><img src="images/facebook.png"></a>
+      <a href="#"><img src="images/twitter.png"></a>
+      <a href="#"><img src="images/instagram.png"></a>
+    </article>
+    <article class="copyright">
+      <p>H'Evans Honey &copy; Copyright 2023</p>
+    </article>
+  </footer>
+  
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Your styles go here */
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap');
+
+
+:root {
+    font-size: 100%;
+}
+
+body {
+    background-color: #d1d1d1;
+    font-family: 'Poppins', sans-serif;
+    header {
+        background: 
+        linear-gradient(180deg,rgba(19, 10, 0, 1), rgba(19, 10, 0, .01), rgba(19, 10, 0, 1)),
+        url(../images/honey_hero.jpg);
+        color: white;
+        background-size: 100%;
+        height: 30vh;
+        h2 {
+            margin-top: 42vw;
+            text-align: center;
+        }
+        nav {
+            img {
+                position: absolute;
+                top: -80px;
+                width: 380px;
+            }
+            ul {
+                font-size: 1.5rem;
+                font-weight: 300;
+                list-style-type: none;
+                padding-top: 1rem;
+                padding-right: 3.5rem;
+                text-align: right;
+                @media screen and (max-width: 600px) {
+                    content: url(../images/menu_icon.png);
+                    width: 10vw;
+                    }
+                li {
+                    color: white;
+                    display: inline-block;
+                    padding: 1rem;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    #home {
+        background-size: 100%;
+        height: 100vh;
+    }
+    main {
+        margin-left: 11vw;
+        margin-right: 11vw;
+        #homePage {
+            display: grid;
+            grid-template-rows: 80vh;
+            grid-template-columns: 39% 61%;
+            grid-template-areas: "about showcase";
+            .about {
+                grid-area: about;
+                background-color: #b8b8b8;
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-align: center;
+                width: auto;
+                .body {
+                    text-align: left;
+                }
+                img {
+                    width: 100%;
+                }
+                .button {
+                    border: 5px solid black;
+                    border-radius: .25rem;
+                    color: black;
+                    font-size: 2rem;
+                    padding: .25rem;
+                    text-decoration: none;
+                }
+            }
+            .showcase {
+                grid-area: showcase;
+                background: url(../images/pumpkin_honey.jpg);
+                background-size: cover;
+                color: #150B00;
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: center;
+                height: auto;
+                width: auto;
+                strong {
+                    font-size: 2.25rem;
+                }
+                img {
+                    width: 100%;
+                }
+                .button {
+                    border: 5px solid #150B00;
+                    border-radius: .25rem;
+                    color: #150B00;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    padding: .25rem;
+                    text-decoration: none;
+                }
+            }
+        }
+        .products {
+            display: grid;
+            grid-template-areas: 
+                                "header header header"
+                                "itemA itemB itemC";
+            h2 {
+                grid-area: header;
+                text-align: center;
+            }
+            article {
+                background-color: #b8b8b8;
+                margin: .25rem;
+            }
+        }
+        .contact {
+            display: grid;
+            grid-template-areas: 
+                                "intro  form"
+                                "social  form";
+            form {
+            grid-area: form;
+                label {
+                    background-color: #b8b8b8;
+                    text-align: center;
+                    width: 24%;
+                }
+                input {
+                    margin-bottom: .5rem;
+                    width: 75%;
+                }
+                .message {
+                    width: 100% !important; 
+                }
+                .submit {
+                    background-color: #C05100;
+                    border: none;
+                    color: #fff;
+                    width: 24%;
+                }
+        }
+            .intro {
+                grid-area: intro;
+            }
+            .social {
+                grid-area: social;
+            }
+        }
+    }
+    footer {
+        display: grid;
+        grid-template-areas: "links copyright";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        text-align: center;
+        .links {
+            background-color: #d9d9d9;
+            grid-area: links;
+            
+            img {
+                width: 70px;
+                margin: 1rem 2.5rem;
+            }
+        }
+        .copyright {
+            background-color: #b8b8b8;
+            font-size: 22px;
+            font-weight: 600;
+            grid-area: copyright;
+            padding: 30px;
+        }
+    }
+}
